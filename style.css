@@ -1,0 +1,94 @@
+/* 1. Variabel - Biar gampang ganti warna nanti */
+:root {
+    --warna-utama: #10b981;
+    --warna-utama-gelap: #047857;
+    --warna-gelap: #1e293b;
+    --warna-putih: #ffffff;
+    --font-utama: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Reset - Menghapus margin bawaan browser agar rapi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-utama);
+}
+
+/* 3. Styling Navigasi (Pake Flexbox) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--warna-putih);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--warna-utama);
+    letter-spacing: -0.5px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--warna-gelap);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--warna-utama);
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--warna-gelap);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-top: 10px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.btn-utama {
+    background-color: var(--warna-utama);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-utama {
+    background-color: var(--warna-utama-gelap);
+    transform: translateY(-3px);
+}
