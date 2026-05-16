@@ -11,15 +11,101 @@
     <nav class="navbar">
         <div class="logo">Warung Umi Iyan</div>
         <ul>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+            &#9776;
+        </button>
     </nav>
 
     <header class="hero">
         <h1>Gado-Gado Special Umi Iyan</h1>
-        <p>Sedia: Gado-Gado, Lontong Sayur, Kopi, dan Aneka Es Segar</p>
-        <button class="btn-utama">Pesan Sekarang</button>
+        <p>Sedia: Gado-Gado, Mie, Kopi, dan Aneka Es Segar</p>
+        <a href="https://wa.me/6282119968360" target="_blank" class="btn-utama">Pesan Sekarang</a>
     </header>
+    
+    <section class="tentang" id="tentang">
+        <div class="tentang-konten">
+            <div class="tentang-teks">
+                <h2>Tentang Kami</h2>
+                <p>Kami menyajikan gado-gado dengan sayuran segar dan bumbu kacang resep rumahan yang autentik. Untuk melengkapi santapan Anda, kami juga menyediakan berbagai minuman segar seperti Susu Frisian Flag. Sederhana, sehat, dan pas di kantong.</p>
+            </div>
+            <div class="tentang-foto">
+                <img src="https://images.unsplash.com/photo-1767485219678-89affb4329a1?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="Suasana Warung Umi Iyan">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <h3>Gado-Gado</h3>
+                <p>Sayuran segar dengan bumbu kacang spesial</p>
+                <span class="harga">Rp 10.000</span>
+            </div>
+
+            <div class="menu-card">
+                <h3>Mie Kuah / Goreng</h3>
+                <p>Mie lezat, bisa kuah atau Goreng</p>
+                <span class="harga">Rp 7.000 · +Telur Rp 12.000</span>
+            </div>
+
+            <div class="menu-card">
+                <h3>Kopi Hangat</h3>
+                <p>Kopi kapal api, indocafe, ABC, white koffie</p>
+                <span class="harga">Rp 5.000</span>
+            </div>
+
+            <div class="menu-card">
+                <h3>Es Segar</h3>
+                <p>Minuman dingin yang bikin adem. Teh jus, jasjus, dll</p>
+                <span class="harga">Rp 2.000</span>
+            </div>
+
+            <div class="menu-card">
+                <h3>Gorengan</h3>
+                <p>4 pcs gorengan renyah, cocok buat cemilan santai</p>
+                <span class="harga">Rp 5.000 (4 pcs)</span>
+            </div>
+
+            <div class="menu-card">
+                <h3>Susu Frisian Flag</h3>
+                <p>Susu segar berkualitas</p>
+                <span class="harga">Rp 5.000</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <h2>Kontak</h2>
+        <div class="kontak-grid">
+            <div class="kontak-item">
+                <h3>📱 WhatsApp</h3>
+                <p>082119968360</p>
+            </div>
+            <div class="kontak-item">
+                <h3>🕗 Jam Buka</h3>
+                <p>07.00 - 20.00 WIB</p>
+            </div>
+            <div class="kontak-item">
+                <h3>📍 Alamat</h3>
+                <p>Jl. Raya PLP, Kemuning, Kec. Legok, Kabupaten Tangerang, Banten 15820</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.querySelector('.navbar ul');
+
+        hamburger.addEventListener('click', function() {
+            menu.classList.toggle('menu-terbuka');
+        });
+    </script>
     
 </body>
 </html>
