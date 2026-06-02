@@ -9,4 +9,4 @@ di Legok, Tangerang.
 - CSS
 
 ## Cara Buka
-Buka file `warung-umi-iyan.html` di browser.
+Buka link ini https://ytmhmmddzikri-maker.github.io/warung-umi-iyan/ di browser.
